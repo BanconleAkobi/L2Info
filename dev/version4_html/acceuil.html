@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <title>Accueil</title>
+</head>
+
+<style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Empêche le défilement de la page si la vidéo est plus grande que la fenêtre d'affichage */
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+			object-fit: cover;
+            z-index: -1; /* Place la vidéo en arrière-plan par rapport au contenu */
+        }
+
+        .menu-link {
+            text-decoration: none; /* Supprimer le soulignement par défaut des liens */
+            color: white; /* Couleur du texte non survolé */
+            transition: color 0.3s; /* Animation de transition pour la couleur */
+        }
+
+        .menu-link:hover {
+            color: red; /* Couleur du texte lors du survol */
+        }
+    </style>
+<body>
+
+        <video autoplay muted loop >
+            <source src="FondDynamic.mp4" type="video/mp4">
+        </video>
+   
+
+    <table width="100%" height="200">
+            <tr>
+                <td width="30%" height="15%">
+                    <img src="LogoSite.png" width="40%" align="left">
+                </td>
+                <td>
+                    <a href="acceuil.html"><font size="5" face="Cooper Black" color="white" class="menu-link">Accueil</font></a>
+                </td>
+                <td>
+                    <a href="tpassword.html"><font size="5" face="Cooper Black" color="white" class="menu-link">Test_mdp</font></a>
+                </td>
+                <td>
+                    <a href="generateur.html"><font size="5" face="Cooper Black" color="white" class="menu-link">Generateur_mdp</font></a>
+                </td>
+                <td>
+                    <a href="FAQ.htm"><font size="4" face="Cooper Black" color="white" class="menu-link">FAQ</font></a>
+                </td>
+                <td>
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({ pageLanguage: 'fr', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                        }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
